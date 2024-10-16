@@ -1,0 +1,14 @@
+{
+  "name": "num_nest_73",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "numnest": "./main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
