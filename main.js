@@ -3,16 +3,16 @@
 
 const lib = require("./lib");
 
-let command = process.argv[2];
-let numbers = process.argv.slice(3).map((n) => parseFloat(n));
-
-if (command === "avg" && numbers.length === 0) {
-    console.log("Insufficient parameters for avg. Please provide numbers.");
-    process.exit(1);
-} else if ((command === "prime" || command === "factorial") && numbers.length !== 1) {
-    console.log(`Insufficient parameter for ${command}. Please provide one number.`);
+if(process.argv.length <= 3){
+    console.log("Insufficient parameter");
     process.exit(1);
 }
+
+let command = process.argv[2];
+
+let numbers = process.argv
+    .slice(3, process.argv.length)
+    .map((n) => parseFloat(n));
 
 if(numbers.some((n)=>isNaN(n))){
     console.log("Some arguments are not numbers!");
