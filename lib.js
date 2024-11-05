@@ -4,7 +4,7 @@ function avg(numbers) {
 }
 
 function prime(num) {
-    if (num < 1) {
+    if (num <= 1) {
         return false;
     }
 
@@ -18,8 +18,9 @@ function prime(num) {
             return false;
         }
     }
-    return false;
+    return true; // 모든 조건을 통과하면 소수임
 }
+
 
 function factorial(num) {
     if (num < 1) {
