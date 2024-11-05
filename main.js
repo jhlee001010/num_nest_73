@@ -3,8 +3,8 @@
 
 const lib = require("./lib");
 
-let command = process.argv[2];
-let numbers = process.argv.slice(3).map((n) => parseFloat(n));
+let command = process.argv[1].split('/').pop(); // CLI 명령어 인식
+let numbers = process.argv.slice(2).map((n) => parseFloat(n));
 
 if (command === "avg" && numbers.length === 0) {
     console.log("Insufficient parameters for avg. Please provide numbers.");
