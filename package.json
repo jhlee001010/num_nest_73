@@ -7,7 +7,6 @@
     "test": "jest"
   },
   "bin": {
-    "num_nest_73": "./main.js",
     "avg": "./main.js",
     "prime": "./main.js",
     "factorial": "./main.js"
