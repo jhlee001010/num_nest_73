@@ -1,13 +1,16 @@
 {
   "name": "num_nest_73",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "test": "jest"
   },
   "bin": {
-    "num_nest_73": "./main.js"
+    "num_nest_73": "./main.js",
+    "avg": "./main.js",
+    "prime": "./main.js",
+    "factorial": "./main.js"
   },
   "author": "",
   "license": "ISC",
